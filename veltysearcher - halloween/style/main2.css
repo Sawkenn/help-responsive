@@ -1,0 +1,107 @@
+body{
+    background-color: #212121;
+}
+
+.box {
+    width: 400px;
+    height: 300px;
+    background-color: rgb(31, 31, 31);
+    position: relative;
+  }
+  .box::before,
+.box::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(45deg, #754e1b, #a06727, #ffbb00, #ebcd8c, #75601b, #a09e27, #ffc400, #ebe28c);
+  width: 100%;
+  height: 100%;
+  transform: scale(1.02);
+  z-index: -1;
+  background-size: 500%;
+  animation: animate 20s infinite;
+}
+.box::after {
+    filter: blur(20px);
+  }
+  @keyframes animate {
+    0% { background-position: 0 0; }
+    50% { background-position: 300% 0; }
+    100% { background-position: 0 0; }
+  }
+  .box{
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 1000px;
+    padding-bottom: 400px;
+  }
+
+  .boutton{
+    background-color: rgb(255, 201, 139);
+    border-radius: 20px;
+    font-size: 40px;
+    font-family: 'Island Moments', cursive;
+    transition: 0.5s;
+   
+    
+  }
+
+
+  .boutton:hover{
+  background-color: #e47d07;
+  transition: 0.5s;
+  } 
+  
+.search{
+  text-align: center;
+  color: rgb(226, 123, 4);
+  font-family: 'Island Moments', cursive;
+  padding-top: 10px;
+  transition: 0.5s;
+  font-size: 80px;
+}
+
+.search:hover{
+  color: #d8a10b;
+  font-size: 85px;
+  transition: 0.5s;
+}
+
+
+.boutton{
+  margin-left: 415px;
+}
+
+.typewriter{
+  text-align: center;
+  color: white;
+  font-family: 'Island Moments', cursive;
+  transition: 0.5s;
+  font-size: 30px;
+}
+
+.typer{
+  color: #d1a11c !important;
+  transition: 0.5s;
+}
+
+.typewriter:hover{
+  color: #da990d;
+  transition: 0.5s;
+}
+
+.typer:hover{
+  color: #d6b455 !important;
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 1499px) {
+ .box {
+    width: 90%;
+  }
+}
+
+
+ 
